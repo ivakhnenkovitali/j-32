@@ -1,15 +1,12 @@
 package by.itclass.model.services;
-
 import by.itclass.model.db.DbInMemory;
 import by.itclass.model.entities.User;
-import com.sun.security.auth.UnixNumericUserPrincipal;
-
+import cm.sun.security.auth.UnixNumericUserPrincipal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.stream.Collectors;
-
 public class UserService {
     public List<User> getByConditions(Map<String, String[]> params) {
         List<User> users = new ArrayList<>();
