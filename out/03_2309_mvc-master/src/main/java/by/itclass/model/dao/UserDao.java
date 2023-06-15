@@ -1,11 +1,8 @@
 package by.itclass.model.dao;
-
 import by.itclass.model.db.ConnectionManager;
 import by.itclass.model.entities.User;
-
 import java.sql.SQLException;
 import java.util.List;
-
 public class UserDao {
     public static final String QUERY_FIO = "SELECT id, fio, age, email FROM user WHERE fio = ?";
 
