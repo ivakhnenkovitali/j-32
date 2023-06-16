@@ -5,11 +5,9 @@ import java.sql.SQLException;
 import java.util.List;
 public class UserDao {
     public static final String QUERY_FIO = "SELECT id, fio, age, email FROM user WHERE fio = ?";
-
     public UserDao() {
         ConnectionManager.init();
     }
-
     public User selectByFio(String fio) {
         try (var cn = ConnectionManager.getConnection();
              var ps = cn.prepareStatement(QUERY_FIO)){
