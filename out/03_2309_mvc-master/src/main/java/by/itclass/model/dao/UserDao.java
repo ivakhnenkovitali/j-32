@@ -22,7 +22,6 @@ public class UserDao {
         }
         return null;
     }
-
     public List<User> selectById(int from, int to) {
         return null;
     }
