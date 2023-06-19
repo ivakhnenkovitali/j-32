@@ -1,15 +1,11 @@
 package _04_io._05_fr;
-
 import lombok.SneakyThrows;
-
 import java.io.FileReader;
 import java.io.FileWriter;
-
 public class Main {
     //записываем файл в 2 этапа, читаем его и вывадим содержиное в консоль
     //как поток символов
     public static final String FILE = "src/_04_io/_05_fr/file.file";
-
     //append в конструкторе - если true - то данные не стираются, а новые добавляются после существующих
     //если false, то данные записываются заново
     @SneakyThrows
