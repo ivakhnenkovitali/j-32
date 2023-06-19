@@ -1,19 +1,14 @@
 package _04_io._01_fis;
-
 import lombok.SneakyThrows;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStream;
-
 public class Main {
     //записываем массив байт а файл, читаем файл и выводим содержиное в файл и в консоль
     //второй код - побайтная печать массива байт
-
     public static final String TEST_EXT = "src/_04_io/_01_fis/test.ext";
     public static final String TEST_1_EXT = "src/_04_io/_01_fis/test1.ext";
-
     @SneakyThrows
     public static void main(String[] args) {
         try (var fos = new FileOutputStream(TEST_EXT);
