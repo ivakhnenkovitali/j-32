@@ -1,13 +1,9 @@
 package _04_io._04_ps;
-
 import lombok.SneakyThrows;
-
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
 import java.io.PrintStream;
-
 public class Main {
-
     //Использовали PrintStream для вывода форматированной строки в файл
     //Использовали сериализацию
     @SneakyThrows
