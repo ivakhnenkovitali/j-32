@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+    <form action="/search" method="post">
+        <input name="fio" placeholder="FIO" required>
+        <input type="submit" value="Search...">
+    </form>
+
+    <form action="/google" method="post">
+        <input name="q" placeholder="Query" required>
+        <input type="submit" value="Send...">
+    </form>
+
+    <form action="/jspSearch" method="post">
+        <input name="fio" placeholder="FIO" required>
+        <input type="submit" value="Search...">
+    </form>
+    <div>
+        <form action="/condition" method="post">
+            Search by:<br>
+            name <input type="radio" name="condition" value="fio" checked>
+            id <input type="radio" name="condition" value="id"><br>
+            Name: <input name="fio"> <br>
+            From: <input type="number" name="from"><br>
+            To: <input type="number" name="to"><br>
+            <input type="submit" value="Search">
+        </form>
+    </div>
+</body>
+</html>
