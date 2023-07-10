@@ -2,7 +2,6 @@ import CsvCat;
 import lombok.experimental.UtilityClass;
 
 import java.util.Arrays;
-
 @UtilityClass
 public class CatFactory {
     public static CsvCat getInstance(String str) throws IllegalStateException {
@@ -14,13 +13,11 @@ public class CatFactory {
         var age = validateByNegative(Integer.parseInt(slitStr[2]));
         return new CsvCat(number, name, age);
     }
-
     private static void validateArrayLength(int length) {
         if(length != 3) {
             throw new IllegalStateException("Invalid line format");
         }
     }
-
     private static void validateAsNumber(String... strings) {
         try {
             Arrays.stream(strings).forEach(Integer::parseInt);
@@ -28,7 +25,6 @@ public class CatFactory {
             throw new IllegalStateException("Number or age is not a number");
         }
     }
-
     private static int validateByNegative(int value) {
         if (value <= 0) {
             throw new IllegalStateException("Negative number or age");
