@@ -3,11 +3,9 @@ import lombok.SneakyThrows;
 
 import java.sql.DriverManager;
 import java.util.ArrayList;
-
 public class SelectPrepared {
     public static final String URL = "jdbc:mysql://localhost:3306/po_2309";
     public static final String QUERY = "SELECT name,age,department FROM staff WHERE age>? AND department=?";
-
     @SneakyThrows
     public static void main(String[] args) {
         Class.forName("com.mysql.cj.jdbc.Driver");

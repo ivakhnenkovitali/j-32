@@ -3,7 +3,6 @@ import lombok.SneakyThrows;
 
 import java.sql.DriverManager;
 import java.util.ArrayList;
-
 public class SelectStatement {
     public static final String URL = "jdbc:mysql://localhost:3306/po_2309";
     @SneakyThrows
