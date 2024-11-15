@@ -9,7 +9,6 @@ public class ConnectionManager {
     public static void init() {
         Class.forName("com.mysql.cj.jdbc.Driver");
     }
-
     @SneakyThrows
     public static Connection getConnection() {
         if (cn == null || cn.isClosed()) {
